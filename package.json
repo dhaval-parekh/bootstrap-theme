@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm ci && composer install && npm run build",
+    "dev": "rm -rf build && wp-scripts start",
+    "build": "rm -rf build && wp-scripts build"
+  },
+  "author": "Dhaval Parekh",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.19.0"
+  }
+}
