@@ -45,10 +45,10 @@ $border-radius-lg: 0.5rem !default;
   --wp--preset--color--light: #{$light};
   --wp--preset--color--dark: #{$dark};
 
-  --wp--preset--font-size--small: 0.875rem;
-  --wp--preset--font-size--medium: 1rem;
-  --wp--preset--font-size--large: 1.25rem;
-  --wp--preset--font-size--extra-large: 1.5rem;
+  --wp--preset--font-size--sm: 0.875rem;
+  --wp--preset--font-size--base: 1rem;
+  --wp--preset--font-size--lg: 1.25rem;
+  --wp--preset--font-size--xl: 1.5rem;
 
   --wp--preset--spacing--0: 0;
   --wp--preset--spacing--1: 0.25rem;
