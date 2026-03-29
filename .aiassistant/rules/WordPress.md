@@ -1,3 +1,7 @@
+---
+apply: always
+---
+
 # AI Development Guidelines: WordPress Project
 
 ## 1. Core Standards & Architecture
@@ -9,6 +13,13 @@
 * **Namespacing:** All themes and plugins **must** be encapsulated in a project-specific namespace. Global functions are
   prohibited.
 	* *Pattern:* `namespace ProjectName\Component;`
+* DO NOT generate example usage.
+* DO NOT generate usage example.
+* DO NOT use html tags such as <p>, <lu>, <li>.
+* DO NOT generate documentation for type member properties.
+* Write PHPDoc.
+* Write inline comments.
+* Leave no empty space or tabs.
 
 ## 2. Naming Conventions
 
@@ -87,3 +98,4 @@ function get_formatted_user_metadata( int $user_id = 0 ): string {
 	// Clean and return the data
 	return $results ? sanitize_text_field( strval( $results )  ) : '';
 }
+```
