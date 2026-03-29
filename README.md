@@ -58,6 +58,16 @@ This project uses **GitHub Actions** for Continuous Integration. Every push or p
 
 ## 🎨 Theme Customization
 
-- **`theme.json`**: Customize the color palette, typography, and spacing scales here.
+- **`theme.json`**: This is the **Single Source of Truth**. Customize the color palette, typography, and spacing scales here.
 - **`src/scss/main.scss`**: Main SCSS file for global styles and Bootstrap overrides.
+- **`src/scss/_variables.scss`**: Bridges `theme.json` and Bootstrap by mapping generated variables to Bootstrap variables.
 - **`src/js/main.js`**: Entry point for theme-specific JavaScript.
+
+### Synchronization Workflow
+
+The theme automatically synchronizes `theme.json` settings with SCSS variables using a custom script (`sync-theme-json.js`). This script runs automatically when you execute `npm run dev` or `npm run build`. 
+
+To manually synchronize, run:
+```bash
+npm run sync-theme
+```
