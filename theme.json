@@ -201,5 +201,10 @@
 		"layout": {
 			"contentSize": "1320px"
 		}
+	},
+	"styles": {
+		"spacing": {
+			"blockGap": "0"
+		}
 	}
 }
