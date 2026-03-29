@@ -39,6 +39,17 @@ function theme_supports(): void {
  * @return void
  */
 function enqueue_styles_and_scripts(): void {
-	wp_enqueue_style( 'bootstrap-theme-style', BOOTSTRAP_THEME_URI . '/build/index.css', [], VERSION, 'all' );
-	wp_enqueue_script( 'bootstrap-theme-script', BOOTSTRAP_THEME_URI . '/build/index.js', [], VERSION, true );
+	$asset_file = BOOTSTRAP_THEME_DIRECTORY . '/build/index.asset.php';
+
+	if ( file_exists( $asset_file ) ) {
+		$asset = require $asset_file;
+	} else {
+		$asset = [
+			'dependencies' => [],
+			'version'      => VERSION,
+		];
+	}
+
+	wp_enqueue_style( 'bootstrap-theme-style', BOOTSTRAP_THEME_URI . '/build/index.css', [], $asset['version'], 'all' );
+	wp_enqueue_script( 'bootstrap-theme-script', BOOTSTRAP_THEME_URI . '/build/index.js', $asset['dependencies'], $asset['version'], true );
 }
