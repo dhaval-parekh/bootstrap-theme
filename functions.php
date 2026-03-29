@@ -13,7 +13,9 @@ define( 'BOOTSTRAP_THEME_DIRECTORY', get_template_directory() );
 define( 'BOOTSTRAP_THEME_URI', get_template_directory_uri() );
 
 // Autoload Composer dependencies.
-require_once __DIR__ . '/vendor/autoload.php';
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/vendor/autoload.php';
+}
 
 // Includes.
 require_once __DIR__ . '/inc/core.php';
