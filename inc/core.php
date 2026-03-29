@@ -18,6 +18,26 @@ function setup(): void {
 
 	// Enqueue styles and scripts.
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles_and_scripts' );
+
+	// Register blocks.
+	add_action( 'init', __NAMESPACE__ . '\\register_blocks' );
+}
+
+/**
+ * Register blocks.
+ *
+ * @return void
+ */
+function register_blocks(): void {
+	// List of blocks to register.
+	$blocks = [
+		'alert',
+	];
+
+	// Register blocks.
+	foreach ( $blocks as $block ) {
+		register_block_type( BOOTSTRAP_THEME_DIRECTORY . '/build/blocks/' . $block );
+	}
 }
 
 /**
@@ -29,7 +49,6 @@ function theme_supports(): void {
 	// Localization.
 	load_theme_textdomain( 'bootstrap-theme', get_template_directory() . '/languages' );
 }
-
 
 /**
  * Enqueue styles and scripts.
