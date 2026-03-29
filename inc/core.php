@@ -7,8 +7,6 @@
 
 namespace Bootstrap\Theme\Core;
 
-use const Bootstrap\Theme\VERSION;
-
 /**
  * Setup function for the theme.
  *
@@ -46,7 +44,7 @@ function enqueue_styles_and_scripts(): void {
 	} else {
 		$asset = [
 			'dependencies' => [],
-			'version'      => VERSION,
+			'version'      => BOOTSTRAP_THEME_VERSION,
 		];
 	}
 
