@@ -6,7 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm ci && composer install && npm run build",
     "dev": "rm -rf build && wp-scripts start",
-    "build": "rm -rf build && wp-scripts build"
+    "build": "rm -rf build && wp-scripts build",
+    "lint:js": "wp-scripts lint-js",
+    "lint:php": "composer run phpcs",
+    "lint": "npm run lint:js && npm run lint:php",
+    "format:js": "wp-scripts format",
+    "format:php": "composer run phpcbf",
+    "format": "npm run format:js && npm run format:php"
   },
   "author": "Dhaval Parekh",
   "license": "ISC",
