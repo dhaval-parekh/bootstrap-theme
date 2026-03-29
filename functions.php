@@ -22,5 +22,3 @@ require_once __DIR__ . '/inc/core.php';
 
 // Setup.
 Core\setup();
-
-

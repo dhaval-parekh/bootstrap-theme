@@ -1,18 +1,29 @@
 {
-    "name": "dhavalparekh/bootstrap",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Dhaval Parekh",
-            "email": "dmparekh007@gmail.com"
-        }
-    ],
-    "require-dev": {
-        "roots/wordpress": "^6.8"
-    },
-    "config": {
-        "allow-plugins": {
-            "roots/wordpress-core-installer": true
-        }
-    }
+	"name": "dhavalparekh/bootstrap-theme",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Dhaval Parekh",
+			"email": "dmparekh007@gmail.com"
+		}
+	],
+	"require-dev": {
+		"roots/wordpress": "^6.8",
+		"phpstan/phpstan": "^2.1",
+		"wp-coding-standards/wpcs": "^3.3",
+		"travelopia/wordpress-coding-standards": "^2.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"automattic/vipwpcs": "^3.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"roots/wordpress-core-installer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"phpcs": "vendor/bin/phpcs .",
+		"phpcbf": "vendor/bin/phpcbf .",
+		"phpstan": "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M"
+	}
 }

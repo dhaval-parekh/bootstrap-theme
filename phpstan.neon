@@ -1,0 +1,14 @@
+parameters:
+	level: max
+	bootstrapFiles:
+		- .tests/static-analysis/bootstrap.php
+	scanDirectories:
+		- ./wordpress
+		- ./vendor
+	excludePaths:
+		- vendor
+		- node_modules
+		- wordpress/wp-admin/includes/noop.php
+	paths:
+		- inc
+		- functions.php
