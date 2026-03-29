@@ -199,8 +199,7 @@
 			}
 		},
 		"layout": {
-			"contentSize": "960px",
-			"wideSize": "1320px"
+			"contentSize": "1320px"
 		}
 	}
 }
