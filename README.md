@@ -58,6 +58,6 @@ This project uses **GitHub Actions** for Continuous Integration. Every push or p
 
 ## 🎨 Theme Customization
 
-- **`theme.json`**: The central configuration for the block editor. Customize the color palette, typography, and block styles here.
+- **`theme.json`**: Customize the color palette, typography, and spacing scales here.
 - **`src/scss/main.scss`**: Main SCSS file for global styles and Bootstrap overrides.
 - **`src/js/main.js`**: Entry point for theme-specific JavaScript.

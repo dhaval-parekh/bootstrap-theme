@@ -1,0 +1,59 @@
+
+// Colors
+$primary: #0d6efd !default;
+$secondary: #6c757d !default;
+$success: #198754 !default;
+$info: #0dcaf0 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: #212529 !default;
+
+// Font Sizes
+$font-size-base: 1rem !default;
+$h1-font-size: 2.5rem !default;
+$h2-font-size: 2rem !default;
+$h3-font-size: 1.75rem !default;
+$h4-font-size: 1.5rem !default;
+$h5-font-size: 1.25rem !default;
+$h6-font-size: 1rem !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+) !default;
+
+// Border Radius
+$border-radius: 0.375rem !default;
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.5rem !default;
+
+// WordPress CSS variables mapping back to Bootstrap variables
+:root {
+  --wp--preset--color--primary: #{$primary};
+  --wp--preset--color--secondary: #{$secondary};
+  --wp--preset--color--success: #{$success};
+  --wp--preset--color--info: #{$info};
+  --wp--preset--color--warning: #{$warning};
+  --wp--preset--color--danger: #{$danger};
+  --wp--preset--color--light: #{$light};
+  --wp--preset--color--dark: #{$dark};
+
+  --wp--preset--font-size--small: 0.875rem;
+  --wp--preset--font-size--medium: 1rem;
+  --wp--preset--font-size--large: 1.25rem;
+  --wp--preset--font-size--extra-large: 1.5rem;
+
+  --wp--preset--spacing--0: 0;
+  --wp--preset--spacing--1: 0.25rem;
+  --wp--preset--spacing--2: 0.5rem;
+  --wp--preset--spacing--3: 1rem;
+  --wp--preset--spacing--4: 1.5rem;
+  --wp--preset--spacing--5: 3rem;
+}
