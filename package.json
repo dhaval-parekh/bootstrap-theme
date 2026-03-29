@@ -10,6 +10,7 @@
     "lint:js": "wp-scripts lint-js",
     "lint:php": "composer run phpcs",
     "lint": "npm run lint:js && npm run lint:php",
+    "phpstan": "composer run phpstan",
     "format:js": "wp-scripts format",
     "format:php": "composer run phpcbf",
     "format": "npm run format:js && npm run format:php"
