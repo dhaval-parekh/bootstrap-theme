@@ -19,6 +19,10 @@ if ( settings.color && settings.color.palette ) {
 	scssContent += '// Colors\n';
 	settings.color.palette.forEach( ( item ) => {
 		scssContent += `$${ item.slug }: ${ item.color };\n`;
+		// Add RGB variable.
+		if ( item.rgb ) {
+			scssContent += `$${ item.slug }-rgb: ${ item.rgb };\n`;
+		}
 	} );
 	scssContent += '\n';
 }

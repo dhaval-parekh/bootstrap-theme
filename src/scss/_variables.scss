@@ -1,33 +1,25 @@
+// Import generated theme variables
 @import "theme-variables";
-
-// Bootstrap variable overrides
-$h1-font-size: $font-size-h1;
-$h2-font-size: $font-size-h2;
-$h3-font-size: $font-size-h3;
-$h4-font-size: $font-size-h4;
-$h5-font-size: $font-size-h5;
-$h6-font-size: $font-size-h6;
 
 // WordPress CSS variables mapping back to Bootstrap variables
 :root {
-	--wp--preset--color--primary: #{$primary};
-	--wp--preset--color--secondary: #{$secondary};
-	--wp--preset--color--success: #{$success};
-	--wp--preset--color--info: #{$info};
-	--wp--preset--color--warning: #{$warning};
-	--wp--preset--color--danger: #{$danger};
-	--wp--preset--color--light: #{$light};
-	--wp--preset--color--dark: #{$dark};
+	// Overwrite Bootstrap CSS variables according to WordPress values
+	--bs-primary: var(--wp--preset--color--primary);
+	--bs-primary-rgb: #{$primary-rgb};
+	--bs-secondary: var(--wp--preset--color--secondary);
+	--bs-secondary-rgb: #{$secondary-rgb};
+	--bs-success: var(--wp--preset--color--success);
+	--bs-success-rgb: #{$success-rgb};
+	--bs-info: var(--wp--preset--color--info);
+	--bs-info-rgb: #{$info-rgb};
+	--bs-warning: var(--wp--preset--color--warning);
+	--bs-warning-rgb: #{$warning-rgb};
+	--bs-danger: var(--wp--preset--color--danger);
+	--bs-danger-rgb: #{$danger-rgb};
+	--bs-light: var(--wp--preset--color--light);
+	--bs-light-rgb: #{$light-rgb};
+	--bs-dark: var(--wp--preset--color--dark);
+	--bs-dark-rgb: #{$dark-rgb};
 
-	--wp--preset--font-size--sm: #{$font-size-sm};
-	--wp--preset--font-size--base: #{$font-size-base};
-	--wp--preset--font-size--lg: #{$font-size-lg};
-	--wp--preset--font-size--xl: #{$font-size-xl};
-
-	--wp--preset--spacing--0: #{map-get($spacers, '0')};
-	--wp--preset--spacing--1: #{map-get($spacers, '1')};
-	--wp--preset--spacing--2: #{map-get($spacers, '2')};
-	--wp--preset--spacing--3: #{map-get($spacers, '3')};
-	--wp--preset--spacing--4: #{map-get($spacers, '4')};
-	--wp--preset--spacing--5: #{map-get($spacers, '5')};
+	--bs-body-font-size: var(--wp--preset--font-size--base);
 }
