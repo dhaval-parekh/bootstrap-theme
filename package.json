@@ -15,6 +15,6 @@
     "bootstrap": "^5.3.7"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^30.19.0"
+    "@wordpress/scripts": "^31.7.0"
   }
 }
