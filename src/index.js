@@ -7,8 +7,3 @@ import './scss/main.scss';
  * Import JavaScript.
  */
 import './js/main.js';
-
-/**
- * Blocks
- */
-import './blocks/alert';
