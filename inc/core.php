@@ -46,7 +46,15 @@ function register_blocks(): void {
  * @return void
  */
 function theme_supports(): void {
-	// Localization.
+	/**
+	 * Editor styles.
+	 */
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'build/index.css' );
+
+	/**
+	 * Localization.
+	 */
 	load_theme_textdomain( 'bootstrap-theme', get_template_directory() . '/languages' );
 }
 
