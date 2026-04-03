@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/list-group",
+	"version": "1.0.0",
+	"title": "List Group (Bootstrap)",
+	"category": "common",
+	"icon": "list-view",
+	"description": "Bootstrap 5 List Group Component",
+	"attributes": {
+		"flush": {
+			"type": "boolean",
+			"default": false
+		},
+		"numbered": {
+			"type": "boolean",
+			"default": false
+		},
+		"horizontal": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": false
+		}
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}

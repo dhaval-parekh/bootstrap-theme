@@ -32,6 +32,19 @@ function register_blocks(): void {
 	// List of blocks to register.
 	$blocks = [
 		'alert',
+		'badge',
+		'progress',
+		'spinner',
+		'card',
+		'button-group',
+		'accordion',
+		'accordion-item',
+		'list-group',
+		'list-group-item',
+		'breadcrumb',
+		'breadcrumb-item',
+		'carousel',
+		'carousel-item',
 	];
 
 	// Register blocks.

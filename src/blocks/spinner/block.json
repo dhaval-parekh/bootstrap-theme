@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/spinner",
+	"version": "1.0.0",
+	"title": "Spinner (Bootstrap)",
+	"category": "common",
+	"icon": "update",
+	"description": "Bootstrap 5 Spinner Component",
+	"attributes": {
+		"type": {
+			"type": "string",
+			"default": "border"
+		},
+		"variant": {
+			"type": "string",
+			"default": "primary"
+		},
+		"small": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}

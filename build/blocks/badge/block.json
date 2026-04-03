@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bootstrap/badge",
+  "version": "1.0.0",
+  "title": "Badge (Bootstrap)",
+  "category": "common",
+  "icon": "tag",
+  "description": "Bootstrap 5 Badge Component",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "New"
+    },
+    "variant": {
+      "type": "string",
+      "default": "primary"
+    },
+    "pill": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "bootstrap-theme",
+  "editorScript": "file:./index.js"
+}

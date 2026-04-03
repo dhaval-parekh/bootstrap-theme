@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/breadcrumb-item",
+	"version": "1.0.0",
+	"title": "Breadcrumb Item (Bootstrap)",
+	"category": "common",
+	"icon": "minus",
+	"description": "Bootstrap 5 Breadcrumb Item",
+	"parent": [ "bootstrap/breadcrumb" ],
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"href": {
+			"type": "string",
+			"default": ""
+		},
+		"active": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}

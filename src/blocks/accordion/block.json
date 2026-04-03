@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/accordion",
+	"version": "1.0.0",
+	"title": "Accordion (Bootstrap)",
+	"category": "common",
+	"icon": "arrow-down-alt2",
+	"description": "Bootstrap 5 Accordion Component",
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"flush": {
+			"type": "boolean",
+			"default": false
+		},
+		"alwaysOpen": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"providesContext": {
+		"bootstrap/accordion/blockId": "blockId",
+		"bootstrap/accordion/alwaysOpen": "alwaysOpen"
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": false
+		}
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}

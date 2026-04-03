@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/list-group-item",
+	"version": "1.0.0",
+	"title": "List Group Item (Bootstrap)",
+	"category": "common",
+	"icon": "minus",
+	"description": "Bootstrap 5 List Group Item",
+	"parent": [ "bootstrap/list-group" ],
+	"attributes": {
+		"active": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"variant": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}

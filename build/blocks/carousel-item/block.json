@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bootstrap/carousel-item",
+  "version": "1.0.0",
+  "title": "Carousel Item (Bootstrap)",
+  "category": "common",
+  "icon": "minus",
+  "description": "Bootstrap 5 Carousel Item",
+  "parent": [
+    "bootstrap/carousel"
+  ],
+  "attributes": {
+    "active": {
+      "type": "boolean",
+      "default": false
+    },
+    "caption": {
+      "type": "string",
+      "default": ""
+    },
+    "captionLead": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "usesContext": [
+    "bootstrap/carousel/blockId"
+  ],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "bootstrap-theme",
+  "editorScript": "file:./index.js"
+}

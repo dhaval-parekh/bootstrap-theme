@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bootstrap/progress",
+	"version": "1.0.0",
+	"title": "Progress (Bootstrap)",
+	"category": "common",
+	"icon": "chart-bar",
+	"description": "Bootstrap 5 Progress Bar Component",
+	"attributes": {
+		"value": {
+			"type": "number",
+			"default": 50
+		},
+		"max": {
+			"type": "number",
+			"default": 100
+		},
+		"variant": {
+			"type": "string",
+			"default": "primary"
+		},
+		"striped": {
+			"type": "boolean",
+			"default": false
+		},
+		"animated": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"showLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"height": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": false
+		}
+	},
+	"textdomain": "bootstrap-theme",
+	"editorScript": "file:./index.js"
+}
